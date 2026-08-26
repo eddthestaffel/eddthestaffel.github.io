@@ -1,27 +1,41 @@
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8; /* color de fondo suave */
+    color: #333;
+    margin: 40px;
+    text-align: center;
 }
 
-.sidenav a {
-  color: white;
-  padding: 16px;
-  text-decoration: none;
-  display: block;
+h1 {
+    color: #1a73e8; /* azul moderno */
+    font-size: 3em;
+    margin-bottom: 0.2em;
 }
 
-.sidenav a:hover {
-  background-color: #ddd;
-  color: black;
+h2 {
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 1em;
 }
 
-.content {
-  margin-left: 200px;
-  padding-left: 20px;
+p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto 2em auto;
+    line-height: 1.5;
+}
+
+button {
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #155ab6;
 }
