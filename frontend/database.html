@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloud Computing</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/png" href="images/meow_zedong.png">
@@ -10,52 +11,67 @@
 </head>
 
 <body>
-    <h1>Logistica de tanques</h1>
-    <p>Registro y administración de tanques</p>
 
-    <form id="formularioTanque">
-        <label for="id">Número de serie:</label>
-        <input type="text" id="id" required>
+    <header>
+        <h1>Logística de Tanques</h1>
+        <p>Registro y administración de tanques</p>
+    </header>
 
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" required>
+    <main>
 
-        <label for="generacion">Generación:</label>
-        <input type="number" id="generacion" min="1" required>
+        <section>
+            <h2>Registrar tanque</h2>
 
-        <label for="pais">País de fabricación:</label>
-        <input type="text" id="pais" required>
+            <form id="formularioTanque">
 
-        <button type="submit">Guardar tanque</button>
-    </form>
+                <label for="id">Número de serie:</label>
+                <input type="text" id="id" name="id" required>
 
-    <hr>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-    <h2>Tanques registrados</h2>
+                <label for="generacion">Generación:</label>
+                <input type="number" id="generacion" name="generacion" min="1" required>
 
-    <table border="1">
+                <label for="pais">País de fabricación:</label>
+                <input type="text" id="pais" name="pais" required>
 
-        <thead>
-            <tr>
-                <th>ID / Número de serie</th>
-                <th>Nombre</th>
-                <th>Generación</th>
-                <th>País de fabricación</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
+                <button type="submit">Guardar tanque</button>
 
-        <tbody id="tablaTanques">
-            <!-- Los tanques aparecerán aquí -->
-        </tbody>
+            </form>
+        </section>
 
-    </table>
+        <hr>
 
-    <br>
+        <section>
+            <h2>Tanques registrados</h2>
 
-    <a href="../index.html">Volver al inicio</a>
+            <table border="1">
 
-    <script src="sistema.js"></script>
+                <thead>
+                    <tr>
+                        <th>ID / Número de serie</th>
+                        <th>Nombre</th>
+                        <th>Generación</th>
+                        <th>País de fabricación</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tablaTanques">
+                    <!-- Los tanques aparecerán aquí mediante JavaScript -->
+                </tbody>
+
+            </table>
+        </section>
+
+        <br>
+
+        <a href="../index.html">Volver al inicio</a>
+
+    </main>
+
+    <script src="systema.js"></script>
 
 </body>
 
