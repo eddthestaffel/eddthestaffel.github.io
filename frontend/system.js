@@ -100,7 +100,7 @@ tanques.forEach(function (tanque) {
                 Editar
             </button>
 
-            <button type="button" onclick="eliminarTanque('${tanque.id}')">
+            <button onclick="eliminarTanque('${tanque.id}')">
                 Eliminar
             </button>
         </td>
