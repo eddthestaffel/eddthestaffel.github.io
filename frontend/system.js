@@ -73,7 +73,6 @@ formulario.reset();
 
 function mostrarTanques() {
 
-
 tablaTanques.innerHTML = "";
 
 if (tanques.length === 0) {
@@ -97,11 +96,11 @@ tanques.forEach(function (tanque) {
         <td>${tanque.generacion}</td>
         <td>${tanque.pais}</td>
         <td>
-            <button onclick="editarTanque('${tanque.id}')">
+            <button type="button" onclick="editarTanque('${tanque.id}')">
                 Editar
             </button>
 
-            <button onclick="eliminarTanque('${tanque.id}')">
+            <button type="button" onclick="eliminarTanque('${tanque.id}')">
                 Eliminar
             </button>
         </td>
