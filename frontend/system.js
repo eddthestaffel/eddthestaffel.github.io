@@ -1,3 +1,29 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
+
+import {
+    collection,
+    addDoc,
+    getDocs
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
+
+
+const firebaseConfig = {
+    apiKey: "AIzaSyAgjCrnDMe1tUXBsjkSAFyk0GSgtHcyDZs",
+    authDomain: "cloud-computing-a8636.firebaseapp.com",
+    projectId: "cloud-computing-a8636",
+    storageBucket: "cloud-computing-a8636.firebasestorage.app",
+    messagingSenderId: "58402975876",
+    appId: "1:58402975876:web:67031149c5d933919e12d1",
+    measurementId: "G-FZ92EZ1WFF"
+};
+
+const app = initializeApp(firebaseConfig);
+
+const db = getFirestore(app);
+
+console.log("Firestore conectado correctamente");
+
 const formulario = document.getElementById("formularioTanque");
 const tablaTanques = document.getElementById("tablaTanques");
 const botonGuardar = formulario.querySelector("button[type='submit']");
