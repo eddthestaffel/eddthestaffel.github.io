@@ -102,4 +102,4 @@ LocalStorage representa una solución donde los datos permanecen en el dispositi
 
 # Autor
 Eduardo Cona
-Proyecto desarrollado como parte de la asignatura de Cloud Computing.
+- Proyecto desarrollado como parte de la asignatura de Cloud Computing.
