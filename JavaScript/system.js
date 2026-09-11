@@ -46,6 +46,26 @@ formulario.addEventListener("submit", async function (event) {
     const generacion = document.getElementById("generacion").value;
     const pais = document.getElementById("pais").value.trim();
 
+    if (!/^\d{6}$/.test(id)) {
+        alert("El número de serie debe tener exactamente 6 dígitos.");
+        document.getElementById("id").focus();
+        return;
+    }
+
+
+    if (nombre === "") {
+        alert("El nombre es obligatorio.");
+        document.getElementById("nombre").focus();
+        return;
+    }
+
+
+    if (pais === "") {
+        alert("El país es obligatorio.");
+        document.getElementById("pais").focus();
+        return;
+    }
+
     if (tanqueEditando !== null) {
 
         const tanque = tanques.find(function (tanque) {
