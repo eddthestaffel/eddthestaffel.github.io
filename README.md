@@ -51,33 +51,6 @@ Características:
 - Los datos pueden consultarse desde diferentes dispositivos.
 - Permite trabajar con información compartida entre usuarios según la configuración de permisos.
 
-# Estructura del proyecto
-
-proyecto/
-│ 
-├── html
-│   ├── database.html
-│   └── localbase.html
-│
-├── images
-│   ├── meowzedong.png
-│   └── ustlogo.png
-│
-├── JavaScript
-│   ├── system.js
-│   └── systemlocal.js
-│
-├── node_modules
-│
-├── styles
-│   ├── localstyle.css
-│   └── style.css
-│
-├── .gitignore
-├── index.html
-├── README.md
-└── style.css
-
 # Funcionamiento general
 El usuario interactúa con la aplicación desde el navegador.
 
@@ -129,4 +102,4 @@ LocalStorage representa una solución donde los datos permanecen en el dispositi
 
 # Autor
 Eduardo Cona
-Proyecto desarrollado como parte de la asignatura de Cloud Computing.
+- Proyecto desarrollado como parte de la asignatura de Cloud Computing.
